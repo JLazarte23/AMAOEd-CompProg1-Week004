@@ -43,7 +43,10 @@ int main() {
     stringstream(num) >> height;
 
      for(i=1; i<=height; i++)                                                                
-     {                                                                        
+     {                       
+        for(j = i; j < height; j++){
+            cout << " ";
+        }                                             
         for(j=1; j<=i; j++)                                                             
         {                                                                      
              cout << "*";                                                       
