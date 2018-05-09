@@ -40,7 +40,7 @@ int main() {
 
         cout << "Value of arr: " << arr[20] << endl;
         cout << "Value of ptrArray: " << ptrArr << endl;
-        cout << "Value of refArray: " << &arr <<endl;
+        cout << "Value of refArray: " << &ptrArr <<endl;
 
     
     // ********************** DO NOT CHANGE **********************
