@@ -18,7 +18,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "Person.h"
+#include "Dog.h"
 
 using namespace std;
 
@@ -36,39 +36,49 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    Person p;
-    string name = "", address = "", gender = "", occupation = "";
-    int age = 0;
+    Dog d;
+    int legs;
+    string furs;
+    bool tails;
+    string breed;
+    string size;
+    char reg;
     
-    cout << "Enter your name: ";
-    getline(std::cin, name);
-    p.setName(name);
-    
-    cout << "Enter your address: ";
-    getline(std::cin, address);
-    p.setAddress(address);
-    
-    cout << "Enter your gender(M or F): ";
-    getline(std::cin, gender);
-    p.setGender(gender);
-    
-    cout << "Enter your occupation: ";
-    getline(std::cin, occupation);
-    p.setOccupation(occupation);
-    
-    cout << "Enter your age: ";
-    std::cin >> age;
-    p.setAge(age);
-    
-    
+    cout << "Enter breed of your dog: ";
+    cin >> breed;
+    d.setBreed(breed);
+    cout << "Enter size of your dog(Big/Small): ";
+    cin >> size;
+    d.setSize(size);
+    cout << "Your dog is registered already?(Y/N): ";
+    cin >> reg;
+    d.setRegister(reg);
+    cout << "Enter the  number of legs: ";
+    cin >> legs;
+    d.setLeg(legs);
+    cout << "Enter the color of fur: ";
+    cin >> furs;
+    d.setFur(furs);
+    cout << "Enter the number of tail(0-No tail or 1-Has tail): ";
+    cin >> tails;
+    d.setTail(tails);
 
     cout << "" << endl;
-    cout << "Name: " << p.getName() << endl;
-    cout << "Address: " << p.getAddress() << endl;
-    cout << "Age: " << p.getAge() << endl;
-    cout << "Gender: " << p.getGender() << endl;
-    cout << "Occupation: " << p.getOccupation() << endl;
-
+    cout << "Dog Information" << endl;
+    cout << "Breed: " << d.getBreed() << endl;
+    cout << "Size: " << d.getSize() << endl;
+    if(d.getRegister() == 'Y'){
+        cout << "Registered: " <<d. getRegister() << "es" << endl;
+    }else{
+        cout << "Registered: " << d.getRegister() << "o" << endl;
+    }
+    cout << "Number of Legs: " << d.getLeg() << endl;
+    cout << "Color of fur: " << d.getFur() << endl;
+    if(d.getTail() == false){
+        cout << "Number of tail: No tail" << endl;
+    }else{
+        cout << "Number of tail: One tail" << endl;
+    }
 
 
     // ********************** DO NOT CHANGE **********************

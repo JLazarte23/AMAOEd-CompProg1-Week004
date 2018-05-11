@@ -42,15 +42,20 @@ int main() {
     getline(std::cin, num);
     stringstream(num) >> height;
 
+    
     do{
-        for(j = i; j < height; j++){
-            cout << "  ";
+       for(j = 1; j <= i; j++){
+              cout << "  ";
         }
-        for(j = 1; j <= (2*i-1); j++){
+       for(j = i; j <= height; j++){
             cout << "* ";
         }
-        cout << endl;
-        i++;
+        for(j = i; j < height; j++){
+            cout << "* ";
+        }
+         cout << endl;
+         i++;
+        
     }while(i<=height);
     
     

@@ -36,19 +36,21 @@ int main() {
     // ***********************************************************
 
     char letter[10] = {'A','B','C','D','E','F','G','H','I','J'};
-    int height = 0, i, j;
+    int height = 0, i = 0, j = 0;
 
     cout << "Enter height of triangle(1-10): ";
     std::cin >> height;
 
-    for(i = 0; i<=height-1; i++)                                                                
-        {                                                                        
-            for(j = 0; j<=i; j++)                                                             
-            {          
-                    cout << letter[i];
-            }                                                              
-        cout << endl;                                                                                                                        
-   }        
+    do{
+        for(j = i; j < height; j++){                     
+              cout << "  ";                                                                                                              
+        }                                                 
+        for(j = 0; j <= (2*i); j++){          
+                   cout << letter[i] << " ";
+        }
+        cout << endl;
+        i++; 
+     }while(i<height);        
     
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting

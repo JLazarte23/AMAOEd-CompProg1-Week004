@@ -5,21 +5,21 @@
 using namespace std;
 
 class Mammal {
+    
+    public:
     int mLeg;
     string mFurColor;
     bool mTail;
-
-    public:
-
+    
     Mammal();
     Mammal(int mLeg, string mFurColor, bool mTail);
-    void Leg(int leg);
-    void Fur(string fur);
-    void Tail(bool tail);
+    void setLeg(int leg);
+    void setFur(string fur);
+    void setTail(bool tail);
 
-    int GetLeg();
-    string GetFur();
-    bool GetTail();
+    int getLeg();
+    string getFur();
+    bool getTail();
 };
 #endif
 Mammal::Mammal(){
@@ -32,22 +32,22 @@ Mammal::Mammal(int mLeg, string mFurColor, bool mTail){
     this->mFurColor = mFurColor;
     this->mTail = mTail;
 }
-void Mammal::Leg(int leg) {
+void Mammal::setLeg(int leg) {
     this->mLeg = leg;
 }
-void Mammal::Fur(string fur) {
+void Mammal::setFur(string fur) {
     this->mFurColor = fur;
 }
-void Mammal::Tail(bool tail) {
+void Mammal::setTail(bool tail) {
     this->mTail = tail;
 }
 
-int Mammal::GetLeg(){
+int Mammal::getLeg(){
     return mLeg;
 }
-string Mammal::GetFur(){
+string Mammal::getFur(){
     return mFurColor;
 }
-bool Mammal::GetTail(){
+bool Mammal::getTail(){
     return mTail;
 }

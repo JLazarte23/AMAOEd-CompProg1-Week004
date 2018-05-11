@@ -43,7 +43,7 @@ int main() {
     if(digit == 0){
         cout << "Hello World";
     }else if(digit == 1){
-        cout << "I am a Groot";
+        cout << "I am Groot";
     }else if(digit == 2){
         cout << "To the Top";
     }else if(digit == 3){

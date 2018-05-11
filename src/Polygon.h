@@ -12,11 +12,11 @@ class Polygon {
 
     Polygon();
     Polygon(int mSide, string mColor);
-    void Side(int side);
-    void Color(string color);
+    void setSide(int side);
+    void setColor(string color);
 
-    int GetSide();
-    string GetColor();
+    int getSide();
+    string getColor();
 };
 #endif
 Polygon::Polygon(){
@@ -27,15 +27,15 @@ Polygon::Polygon(int mSide, string mColor){
     this->mSide = mSide;
     this->mColor = mColor;
 }
-void Polygon::Side(int side) {
+void Polygon::setSide(int side) {
     this->mSide = side;
 }
-void Polygon::Color(string color) {
+void Polygon::setColor(string color) {
     this->mColor = color;
 }
-int Polygon::GetSide(){
+int Polygon::getSide(){
     return mSide;
 }
-string Polygon::GetColor(){
+string Polygon::getColor(){
     return mColor;
 }

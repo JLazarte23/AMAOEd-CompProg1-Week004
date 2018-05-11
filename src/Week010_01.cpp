@@ -43,18 +43,18 @@ int main() {
     
     cout << "Enter number of legs: ";
     cin >> legs;
-    Mammal1.Leg(legs);
+    Mammal1.setLeg(legs);
     cout << "Enter color of fur: ";
     cin >> furs;
-    Mammal1.Fur(furs);
+    Mammal1.setFur(furs);
     cout << "Enter 0-No tail or 1-Has tail: ";
     cin >> tails;
-    Mammal1.Tail(tails);
+    Mammal1.setTail(tails);
 
-    if(Mammal1.GetTail() == 0){
-    cout << "Your mammal has " << Mammal1.GetLeg() << " legs, " << Mammal1.GetFur() << " fur and no tail." << endl;
+    if(Mammal1.getTail() == 0){
+    cout << "Your mammal has " << Mammal1.getLeg() << " legs, " << Mammal1.getFur() << " fur and no tail." << endl;
     }else{
-        cout << "Your mammal has " << Mammal1.GetLeg() << " legs, " << Mammal1.GetFur() << " fur and has a tail." << endl;
+        cout << "Your mammal has " << Mammal1.getLeg() << " legs, " << Mammal1.getFur() << " fur and has a tail." << endl;
     }
 
 
